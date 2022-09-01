@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <title>Codexty</title>
+    </head>
+    
+    <style>
+        body{
+            background-color: #252525;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #nav {
+            color: #FFFFFF;
+            font-weight: 500;
+        }
+
+        #top {
+            text-align: center;
+        }
+
+        #heading {
+            text-transform: capitalize;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 54px;
+            letter-spacing: 0.0005em;
+            color: #FFFFFF;
+            padding-top: 10vw;
+
+        }
+
+        #heading-p{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(255, 255, 255, 0.6);
+            padding-top: 2vw; 
+        
+            
+        }
+        
+        #sendQuote{
+            background: linear-gradient(90deg, #DD612D 0%, #E97630 100%);
+            justify-content: center;
+            padding: 1% ;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+
+        .row {
+            margin-top: 20px;
+            margin-bottom: 60px;
+            float: left;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            height: auto;
+            width: 100%;
+            margin-top: 5vw;
+            justify-content: center;
+        }
+
+        #featureCard {
+            padding-left: 3vw;
+            padding-top: 3vw;
+            width: fit-content;
+            height: auto;
+        }
+
+        #design {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            padding-left: 30px;
+            color: #FFFFFF;
+
+        }
+        
+        #data {
+            font-size: 16px;
+            line-height: 32px;
+            padding-left: 30px;
+            padding-right: 49px;
+            color: rgba(255, 255, 255, 0.6);
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #howwework{
+            text-align: center;
+            color: #FFFF;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 54px;
+            text-align: center;
+            letter-spacing: 0.0005em;
+            padding-top: 10vw;
+            
+        }
+        #howwework-p {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+        }
+
+        #D {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 26px;
+            color: #FFFFFF;
+            padding-top: 8vw;
+        }
+
+        #D-p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 32px;
+            color: #BBBBBB;
+        }
+
+
+        #op {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 54px;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 0.0005em;
+            color: white;
+            padding-top: 10vw;
+        }
+
+        #op-p {
+            font-size: 18px;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: center;
+               
+        }
+
+
+        #test {
+            padding-top: 10vw;
+            color: chocolate;
+            font-style: normal;
+            width: 100%;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 54px;
+            text-align: center;
+            letter-spacing: 0.0005em;
+        }  
+        #test-p {
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            width: 50%;
+            color: rgba(255, 255, 255, 0.6);
+            
+            
+        }
+
+        #testCard-pic {
+            padding-top: 1vw;
+            width: auto;
+
+        }
+
+        #name {
+            text-align: center;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 25px;
+            color: white;
+        }
+
+        #company {
+            text-align: center;
+            padding-top: 0vw;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            color: rgba(255, 255, 255, 0.6); 
+        }
+        
+        #card-data {
+            text-align: center;
+            padding: 0 2vw 2vw 0vw;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 32px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6); 
+        }
+        
+        #sayHello {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 54px;
+            text-align: center;
+            letter-spacing: 0.0005em;
+            color: white;
+        }
+
+        #sayHello-p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+
+        }
+
+        #sh-btn1 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 3px 10px;
+            background: linear-gradient(90deg, #DD612D 0%, #E97630 100%);
+            justify-content: center;
+            padding: 1% ;
+            padding-left: 5%;
+            padding-right: 5%;
+            border-width: 0px ;
+        }
+        #sh-btn2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            margin: 3px 10px;
+            justify-content: center;
+            padding: 1% ;
+            padding-left: 5%;
+            padding-right: 5%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+
+        }
+
+        #footer-header {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            letter-spacing: 0.1em;
+        }
+
+        #footer-data{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        @media screen and (max-width:600px){
+        
+            #heading {
+                width: fit-content;
+            }
+            
+            #heading-p {
+                width: fit-content;
+            }
+
+            #howwework {
+                width: fit-content;
+            }
+
+            #howwework-p {
+                width: fit-content;
+            }
+            
+            #sayHello {
+                width: fit-content;
+            }
+
+            #op {
+                width: fit-content;
+            }
+            #op-p {
+                width: fit-content;
+            }
+
+            #test {
+                width: fit-content;
+            }
+
+            #test-p {
+                width: fit-content;
+            }
+
+            #sayHello-p {
+                width: fit-content;
+            }
+                        
+        }
+
+        @media (min-width: 768px) {
+            
+            .navbar-brand.abs {
+                position: absolute;
+                width: auto;
+                left: 50%;
+                transform: translateX(-50%);
+                text-align: center;
+            }
+        }
+
+        #logo {
+            padding-right: 1vw;
+            padding-left: 1vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #id {
+            position: absolute;
+            left: -21.15%;
+            right: -15.78%;
+            top: 1.98%;
+            bottom: 6.71%;
+            opacity: 0.50;
+            border: 1.9266px dashed #FF8E5E;
+            
+        }
+
+    </style>
+
+    <body>  
+        <div class="container-fluid">    
+            <nav class="navbar navbar-light navbar-expand-md justify-content-center">
+                <a href="/" class="navbar-brand d-flex w-50 mr-auto"><img src="codexty-logo.png" style="max-width: 130px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                    <ul class="navbar-nav w-100 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav">CaseStudies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav">About</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="nav">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            
+
+            <div id="top">
+                <div class="container  col-lg-7 col-md-8" id="heading">Helping brands to <a style="color:chocolate">simplify</a> their digital experiences</div>
+                <blockquote class="container  col-lg-5 col-md-6" id="heading-p">We are committed to not making clients wait. We will deliver the work as quickly as possible.
+                    Even on the same day. Even so, we do not reduce the quality of our work.</blockquote>
+                </div>
+
+
+            <div class="container" style="margin-top: 3%">
+                <div class="col text-center">
+                    <button class="btn btn-primary" id="sendQuote">Send Quote</button>
+                </div>
+                
+            </div>
+
+            <div class="container justify-content-center">
+            
+                <div class="row">
+                    <hr class="container col-lg-12 col-md-12 col-sm-12" style="border-color: grey;">
+                    <div class="col-lg-2 col-md-3 col-sm-8">
+                        <img id="logo" src="Vector.png">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-8">    
+                        <img id="logo" src="Vector (1).png">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-8">    
+                        <img id="logo" src="Google Logo.png">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-8">    
+                        <img id="logo" src="Microsoft Logo.png">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-8 justify-content-center">
+                        <img id="logo" src="Facebook Logo.png">
+                    </div>
+                    <hr class="container col-lg-12 col-md-12 col-sm-12" style="border-color: grey;">
+                </div>
+
+
+            </div>
+
+
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-9 col-md-7 col-lg-4">
+                        <div class="card ">
+                            <img class="card-img-top " src="Design.png" alt="Card image cap" id="featureCard">
+                            <div class="card-body">
+                            <h5 class="card-title" id="design">Design</h5>
+                            <p class="card-text" id="data">The project interface will be designed first,
+                                our favorite tool is Figma.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <div class="col-sm-9 col-md-7 col-lg-4">
+                        <div class="card ">
+                            <img class="card-img-top " src="Develop.png" alt="Card image cap" id="featureCard">
+                        <div class="card-body">
+                            <h5 class="card-title" id="design">Develop</h5>
+
+                            <p class="card-text" id="data">Transform design and write business logic here. 
+                                Choose the technology you want.</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-9 col-md-7 col-lg-4">
+                        <div class="card  ">
+                        <img class="card-img-top d-block" src="Ship.png" alt="Card image cap" id="featureCard">
+                        <div class="card-body">
+                                <h5 class="card-title" id="design">Ship</h5>
+            
+                                <p class="card-text" id="data">After the work is complete, we will send the project and all its assets to you.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+                    
+            <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6" id="howwework">How we<a style="color: chocolate;"> Work</a></div>
+            <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6" id="howwework-p">CodeX is always passionate to cutting edge technology</div>
+            
+            <div class="container">
+                <div class="card mb-8" style=" background-color: #252525;border-width: 0vw;">
+                    <div class="row no-gutters">
+                    <div class="col-lg-4 col-md-6">
+                        <img src="Discovery-Gif.png" class="card-img" id="image">
+                    </div>
+                    <div class=" col-lg-5 col-md-6">
+                        <div class="card-body">
+                        <h5 class="card-title" id="D">Discovery</h5>
+                        <p class="card-text" id="D-p">Designing a satisfying user experience involves
+                        planning a Customer Journey for the users and helping them</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6" id="op">Our <a style="color: chocolate;">Projects</a></div>
+            <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6" id="op-p">We are a design studio with a holistic view of web, mobile, print and product 
+                design. We do great work by paying attention to the detail whilst keeping an eye on the big picture.</div>
+            
+            <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6" id="test">Testimonials</div>
+            <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6" id="test-p">We are a design studio with a holistic view of web,
+            mobile, print and product design.
+            We do great work by paying attention to the detail whilst keeping an eye on the big picture.</div>
+
+            <div class="container-fluid"> 
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 col-lg-4">
+                    <div class="card text-center">
+                        <img class="card-img-top mx-auto " src="Avatar.png" alt="Card image cap" id="testCard-pic">
+                        <div class="card-body" style="text-align: center; padding-top: 0vw;">
+                        <h5 class="card-title" id="name">Courtney Henry</h5>
+                        <h6 class="card-subtitle mb-2 text-muted" id="company">Biffco Enterprises Ltd.</h6>
+                        <p class="card-text" id="card-data">"Very easy to use. I made back the purchase price in just 48 hours!
+                            It's great. It's is both attractive and highly adaptable."</p>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="col-sm-8 col-md-7 col-lg-4">
+                        <div class="card text-center">
+                            <img class="card-img-top mx-auto " src="Avatar (1).png" alt="Card image cap" id="testCard-pic">
+                        <div class="card-body" style="text-align: center; padding-top: 0vw;">
+                            <h5 class="card-title" id="name">Eshter Howard</h5>
+                            <h6 class="card-subtitle mb-2 text-muted" id="company">Abstergo Ltd.</h6>
+                            <p class="card-text" id="card-data">"Your company is truly upstanding and is behind its
+                                product 100%. It's the perfect solution for our business.
+                                It has really helped our business."</p>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-8 col-md-7 col-lg-4">
+                        <div class="card text-center">
+                        <img class="card-img-top mx-auto" src="Avatar (2).png" alt="Card image cap" id="testCard-pic">
+                        <div class="card-body" style="text-align: center; padding-top: 0vw;">
+                                <h5 class="card-title" id="name">Ronald Richards</h5>
+                                <h6 class="card-subtitle mb-2 text-muted" id="company">Barone LLC.</h6>
+                                <p class="card-text" id="card-data">"I am really satisfied with it. I'm good to go.
+                                It really saves me time and effort. It's is exactly what our business has been lacking. "</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="container col-lg-7 col-md-8" id="sayHello">Say <a style="color: chocolate;">Hello</a></div>
+
+            <div class="container col-lg-7 col-md-8" id="sayHello-p">We are a design studio with a holistic 
+                view of web, mobile, print and product design.
+                We do great work by paying attention to the detail whilst keeping an eye on the big picture.
+            </div>
+
+            <div class="container" style="margin-top: 3%">
+                <div class="col text-center">
+                    <button class="btn btn-primary" id="sh-btn1">Send Quote</button>
+                    <button class="btn btn-primary" id="sh-btn2">Ask Us</button>
+                </div>
+            </div>
+           
+
+
+            <div class="container">
+            <!-- Footer -->
+            
+            <hr class="container col-lg-12 col-md-12 col-sm-12" style="border-color: grey;">
+        <footer class="text-lg-start text-muted">
+                <div class="container ">
+                    <!-- Grid row -->
+                    <div class="row mt-3" >
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <i class="fas fa-gem me-3"></i>
+                        <img src="codexty-logo.png" style="height: auto;
+                        width: 60%;
+                        left: 1vw;
+                        top: 2vw;;
+                        ">
+                        
+                        
+                        <p class="text-lg-start" style="
+                            padding-top: 4vw;
+            
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 32px;
+                            color: rgba(255, 255, 255, 0.6);
+                            
+                            flex-direction: row;">
+                            Copyright © 2021
+                            Design By WeCraft
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4" >
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" id="footer-header">
+                        Services
+                        </h6>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">Web Development</a>
+                        </p>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">App Development</a>
+                        </p>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">UI Design</a>
+                        </p>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">Consultation</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Maintenance</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" id="footer-header">
+                        Company
+                        </h6>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">About</a>
+                        </p>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">Contacts</a>
+                        </p>
+                        <p id="footer-data">
+                        <a href="#!" class="text-reset">Send Quote</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Privacy Policy</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Term of Services</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Jobs</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+            
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" id="footer-header">
+                        Resources
+                        </h6>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Support</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Documentations</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">License</a>
+                        </p>
+                        <p id="footer-data">
+                            <a href="#!" class="text-reset">Sitemaps</a>
+                        </p>
+                        
+                    </div>
+                    <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                </section>
+            </footer>
+            <!-- Footer -->
+        </div>
+
+        </div>  
+
+        
+
+        
+    </body>
+</html>
